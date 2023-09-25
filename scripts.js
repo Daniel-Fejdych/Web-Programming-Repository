@@ -10,8 +10,8 @@ if (window.name == "contactHead"){
 	var element = document.getElementById("contact");
     element.classList.add("active");
 }
-if (window.name == "equipmentHead"){
-	var element = document.getElementById("equipment");
+if (window.name == "projectHead"){
+	var element = document.getElementById("projects");
     element.classList.add("active");
 }
 if (window.name == "aboutHead"){
