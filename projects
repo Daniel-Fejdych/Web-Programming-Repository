@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Projects</title>
+  		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div class = header>
+			<iframe id="projectHead" name="projectHead" src="header.html" scrolling="no"></iframe>
+		</div>
+
+		<main>
+			<table bgcolor="black" align="centre" class=etable style="width:90%">
+			  <tr bgcolor="lightgrey" height="100">
+			    <th style="width:18%">Project Cat</th>
+			    <th style="width:18%">Project Cat</th>
+			    <th style="width:18%">Project Cat</th>
+			    <th style="width:18%">Project Cat</th>
+			    <th style="width:18%">Project Cat</th>
+			  </tr>
+			  <tr bgcolor="white" height="75">
+			    <td>Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			  </tr>
+			  <tr bgcolor="white" height="75">
+			    <td> <a href="*.html" >Project</td>
+			    <td><a href="*.html">Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			  </tr>
+			  <tr bgcolor="white" height="75">
+			    <td><a href="*.html">Project</td>
+			    <td> <a href="*.html">Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			    <td>Project</td>
+			  </tr>
+			</table>
+		</main>
+
+		<div class = footer>
+			<iframe src="footer.html" scrolling="no"></iframe>
+		</div>
+	</body>
+</html>
