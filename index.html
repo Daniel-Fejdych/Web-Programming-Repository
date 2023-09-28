@@ -1,50 +1,20 @@
 <!DOCTYPE html>
-<html style="background-color:transparent;">
-	<head>
-		<title>Header</title>
+<html>
+<head>
+		<title>Home Page</title>
   		<link rel="stylesheet" href="styles.css">
 		<script src="scripts.js"></script>
-	</head>
-	<body>
-		<header>
-			<section id="flexHeader1">
-				<h1>DanTech Computing</h1>
-				<h3>Creating Computing Projects since 00:00.</h3>
-			</section>
-			<div class="topnav" id="flexHeader2">
-				<a id="home" href="homePage.html" target="_parent">Home</a>
-				<div class="dropdown" href="projects.html" target="_parent">
-				<button class="dropbutton">Projects
-					<i class="fa fa-caret-down"></i>
-				</button>
-			 <div class="dropdown-stuff">
-					<div class="header">
-						<h2><a id = "equipment" href="projects.html" target="_parent">Projects</a></h2>
-					</div>
-					<div class="row">
-						<div class="column">
-							<h3>Cat 1</h3>
-							<a href="*.html" target="_parent">Project</a>
-							<a href="*.html" target="_parent">Project</a>
-						</div>
-						<div class="column">
-							<h3>Cat 2</h3>
-							<a href="*.html" target="_parent">Project</a>
-							<a href="*.html" target="_parent">Project</a>
-						</div>
-						<div class="column">
-							<h3>Cat 3</h3>
-							<a href="*.html" target="_parent">Project</a>
-							<a href="*.html" target="_parent">Project</a>
-						</div>
-					</div>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <body>
+    			<iframe id="indexHead" name="indexHead" src="header.html" scrolling="no"></iframe>
+		</div>
+		<main>
+			<div class="menu">
 			</div>
-			</div>
-				<a id="about" href="about.html" target="_parent">About</a>
-				<a id="contact" href="contact.html" target="_parent">Contact</a>
-			</div>
-			<!--Make Search bar in line with the navigation bar!!!-->
-			<input id="flexHeader3" type="text" placeholder="Search..">
-		</header>
-	</body>
+		</main>
+		<div class = footer>
+			<iframe src="footer.html" scrolling="no"></iframe>
+		</div>
+  </body>
 </html>
