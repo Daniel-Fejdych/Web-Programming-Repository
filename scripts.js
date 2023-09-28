@@ -22,7 +22,9 @@ var element = document.getElementsByClassName('header')[0];
 element.innerHTML += ' <br><br><br><br><br><br><br><br><br><br><br><br><br>';
 }, 50);
 
-
+var redB = document.getElementById("redB").text;
+var blueB = document.getElementById("blueB").text;
+var greenB = document.getElementById("greenB").text;
 
 
 
