@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  	<label for="redB">
+		Red
+	</label>
+	<textarea oninput = "setColor()" id="redB" rows="1" cols="3">0</textarea>
+	<label for="greenB">
+		Green
+	</label>
+	<textarea oninput = "setColor()" id="greenB" rows="1" cols="3">0</textarea>
+	<label for="blueB">
+		Blue
+	</label>
+	<textarea oninput = "setColor()" id="blueB" rows="1" cols="3">0</textarea>
+	<button onclick = "setColor()" type = "button" id="colB">
+		Set Color
+	</button>
+	
+	<script src="script.js"></script>
+</body>
+
+</html>
