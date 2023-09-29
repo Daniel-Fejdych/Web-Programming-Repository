@@ -1,5 +1,3 @@
-var curColor;
-
 function getColor() {
 var redVal = document.getElementById("redB").value;
 var greenVal = document.getElementById("greenB").value;
@@ -9,6 +7,7 @@ return "rgb(" + redVal + ", " + greenVal + ", " + blueVal  + ")";
 
 function setColor() {
 	curColor = getColor();
+	document.getElementById("colB").style.color = getColor();
 }
 function color(eID){
 	document.getElementById(eID).style.backgroundColor = getColor();
