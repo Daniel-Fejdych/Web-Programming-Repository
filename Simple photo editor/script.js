@@ -18,7 +18,6 @@ return "rgb(" + redVal + ", " + greenVal + ", " + blueVal  + ")";
 }
 
 function setColor() {
-	curColor = getColor();
 	document.getElementById("colB").style.color = getColor();
 }
 function color(eID){
@@ -30,14 +29,12 @@ function color(eID){
 
 function createTable(l,h) {
 	let tab = "";
-	console.log(tab);
 	for (let i = 0; i < l; i++) {
 		tab += "<tr>";
 		for (let j = 0; j < h; j++) {
 			tab += "<div class = \"square\" onmouseover = \"color('t" + i + j + "')\" id = \"t" + i + j + "\"></div>";
 		}
 	}
-	console.log(tab);
 	return tab;
 }
 

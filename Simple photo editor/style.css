@@ -1,5 +1,6 @@
 html {
 	background-color: black;
+	color:white;
 }
 table {
 	background-color: white;
@@ -35,3 +36,44 @@ table {
 .square.fullImg img {
   object-fit: cover;
 }
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #A6A6A6;
+  border: 2px solid black;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 2px solid black;
+  height: 16px;
+  width: 16px;
+  -webkit-appearance: none;
+  margin-top: -4px;
+  
+}
+
+#redS::-webkit-slider-runnable-track {
+	background:red;
+}
+#redS::-webkit-slider-thumb {
+	background:red;
+}
+#greenS::-webkit-slider-runnable-track {
+	background:green;
+}
+#greenS::-webkit-slider-thumb {
+	background:green;
+}
+#blueS::-webkit-slider-runnable-track {
+	background:blue;
+}
+#blueS::-webkit-slider-thumb {
+	background:blue;
+}
+

@@ -10,14 +10,22 @@
 		Red
 	</label>
 	<textarea oninput = "setColor()" id="redB" rows="1" cols="3">0</textarea>
+	
+	<input type="range" id="redS" min="0" max="255" value="0"/>
+	
 	<label for="greenB">
 		Green
 	</label>
 	<textarea oninput = "setColor()" id="greenB" rows="1" cols="3">0</textarea>
+	
+	<input type="range" id="greenS" min="0" max="255" value="0"/>
+	
 	<label for="blueB">
 		Blue
 	</label>
 	<textarea oninput = "setColor()" id="blueB" rows="1" cols="3">0</textarea>
+	<input type="range" id="blueS" min="0" max="255" value="0"/>
+	
 	<button onclick = "setColor()" type = "button" id="colB">
 		Pixel Pen
 	</button>
