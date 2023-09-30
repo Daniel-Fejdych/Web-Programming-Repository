@@ -1,3 +1,15 @@
+var mDown = false;
+
+function mouseDown(){
+	mDown = true;
+}
+function mouseUp(){
+	mDown = false;
+}
+
+
+
+
 function getColor() {
 var redVal = document.getElementById("redB").value;
 var greenVal = document.getElementById("greenB").value;
@@ -10,21 +22,21 @@ function setColor() {
 	document.getElementById("colB").style.color = getColor();
 }
 function color(eID){
+	if(mDown){
 	document.getElementById(eID).style.backgroundColor = getColor();
+	}
 }
 
 
-function createTable() {
-	let tab = "<table>";
+function createTable(l,h) {
+	let tab = "";
 	console.log(tab);
-	for (let i = 0; i < 100; i++) {
+	for (let i = 0; i < l; i++) {
 		tab += "<tr>";
-		for (let j = 0; j < 100; j++) {
-			tab += "<td onclick = \"color('t" + i + j + "')\" id = \"t" + i + j + "\">&nbsp;</td>";
+		for (let j = 0; j < h; j++) {
+			tab += "<div class = \"square\" onmouseover = \"color('t" + i + j + "')\" id = \"t" + i + j + "\"></div>";
 		}
-		tab += "</tr>";
 	}
-	tab += "</table>";
 	console.log(tab);
 	return tab;
 }
@@ -33,6 +45,6 @@ function createTable() {
 
 
 
-document.getElementById("tabHere").innerHTML += createTable();
+document.getElementById("tabHere").innerHTML = createTable(50, 50);
 
 //document.appendChild();

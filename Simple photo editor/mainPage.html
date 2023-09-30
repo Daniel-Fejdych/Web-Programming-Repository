@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onmousedown = "mouseDown()" onmouseup = "mouseUp()">
   	<label for="redB">
 		Red
 	</label>
@@ -21,8 +21,10 @@
 	<button onclick = "setColor()" type = "button" id="colB">
 		Pixel Pen
 	</button>
-	<div id="tabHere">
+	<div id="tabHere" class="grid">
 	</div>
+	
+
 	<script src="script.js"></script>
 </body>
 
