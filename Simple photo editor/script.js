@@ -7,18 +7,73 @@ function mouseUp(){
 	mDown = false;
 }
 
+function getRedInput(){
+	return document.getElementById("redB").value;
+}
+function setRedInput(newVal){
+	document.getElementById("redB").value = parseInt(newVal);
+}
+
+function getRedSlider(){
+	return document.getElementById("redS").value;
+}
+function setRedSlider(newVal){
+	document.getElementById("redS").value = parseInt(newVal);
+}
+
+function getGreenInput(){
+	return document.getElementById("greenB").value;
+}
+function setGreenInput(newVal){
+	document.getElementById("greenB").value = parseInt(newVal);
+}
+
+function getGreenSlider(){
+	return document.getElementById("greenS").value;
+}
+function setGreenSlider(newVal){
+	document.getElementById("greenS").value = parseInt(newVal);
+}
+
+function getBlueInput(){
+	return document.getElementById("blueB").value;
+}
+function setBlueInput(newVal){
+	document.getElementById("blueB").value = parseInt(newVal);
+}
+
+function getBlueSlider(){
+	return document.getElementById("blueS").value;
+}
+function setBlueSlider(newVal){
+	document.getElementById("blueS").value = parseInt(newVal);
+}
 
 
 
 function getColor() {
-var redVal = document.getElementById("redB").value;
-var greenVal = document.getElementById("greenB").value;
-var blueVal = document.getElementById("blueB").value;
+var redVal = getRedInput();
+var greenVal = getGreenInput();
+var blueVal = getBlueInput();
 return "rgb(" + redVal + ", " + greenVal + ", " + blueVal  + ")";
 }
 
 function setColor() {
 	document.getElementById("colB").style.color = getColor();
+}
+function setSlider() {
+	setColor();
+	setRedSlider(getRedInput());
+	setGreenSlider(getGreenInput());
+	setBlueSlider(getBlueInput());
+	
+}
+function setInput() {
+	setColor();
+	setRedInput(getRedSlider());
+	setGreenInput(getGreenSlider());
+	setBlueInput(getBlueSlider());
+	
 }
 function color(eID){
 	if(mDown){
@@ -27,21 +82,26 @@ function color(eID){
 }
 
 
-function createTable(l,h) {
-	let tab = "";
+function createCanvas(l, h) {
+	let canvas = "";
 	for (let i = 0; i < l; i++) {
-		tab += "<tr>";
 		for (let j = 0; j < h; j++) {
-			tab += "<div class = \"square\" onmouseover = \"color('t" + i + j + "')\" id = \"t" + i + j + "\"></div>";
+			canvas += "<div class = \"square\" onmouseover = \"color('t" + i + "," + j + "')\" id = \"t" + i + "," + j + "\"></div>";
 		}
 	}
-	return tab;
+	return canvas;
 }
 
 
 
+function resizeCanvas() {
+	let length = document.getElementById("lIn").value;
+	let height = document.getElementById("hIn").value;
+	document.getElementById("tabHere").style.gridTemplateColumns = "repeat(" + length + ", 1fr);";
+	document.getElementById("tabHere").style.gridTemplateRows = "repeat(" + height + ", 1fr);";
+	document.getElementById("tabHere").innerHTML = createCanvas(length, height);
+}
 
-
-document.getElementById("tabHere").innerHTML = createTable(50, 50);
+resizeCanvas();
 
 //document.appendChild();
