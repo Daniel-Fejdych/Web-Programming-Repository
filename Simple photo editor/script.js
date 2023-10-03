@@ -97,8 +97,8 @@ function createCanvas(l, h) {
 function resizeCanvas() {
 	let length = document.getElementById("lIn").value;
 	let height = document.getElementById("hIn").value;
-	document.getElementById("tabHere").style.gridTemplateColumns = "repeat(" + length + ", 1fr);";
-	document.getElementById("tabHere").style.gridTemplateRows = "repeat(" + height + ", 1fr);";
+	//\/Please Clean This Up\/It works but ugly.
+	document.getElementById("tabHere").style = "grid-template-columns: repeat(" + length + ", 1fr);grid-template-rows: repeat(" + height + ", 1fr);";
 	document.getElementById("tabHere").innerHTML = createCanvas(length, height);
 }
 
