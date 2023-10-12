@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // create button
-      var options = ['Option 1', 'Option 2', 'Option 3'];
+      var options = ['Click This', 'Not this', 'Maybe this one.'];
       options.forEach(function(option){
       var button = $('<button>').text(option);
       button.appendTo('#btn');
