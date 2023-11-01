@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script>
+         $(document).ready(function(){
+             // when ready, grab the html 
+             getContents();
+         });
+         function getContents(){
+             $.ajax({
+                 url: 'https://f28wp.github.io/material/tasks/Task%2008%20-%20AJAX%20&%20JSON.html',
+                 success: function(data) {
+                    console.log(data);
+                     $('#data').html( data );
+                 }
+             });
+         }
+        </script>
+
+
+        <span id="data"></span>
+	<script src="script.js"></script>
+</html>
