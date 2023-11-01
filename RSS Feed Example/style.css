@@ -1,0 +1,23 @@
+html {
+	background-color: #667;
+}
+div {
+	border-style: dotted;
+	padding: 10px;
+	border-width: 10px;
+	border-color: #565;
+	margin:10px;
+	color: #aaa;
+	background-color: #556;
+}
+h1 {
+	color: #aff;
+	
+}
+h2 {
+	color: #ffa;
+	
+}
+a {
+	color: #f77;
+}
