@@ -1,8 +1,21 @@
 $(function() {
 	$(document).ready(function(){ 
-		$("button").click(function(){
-			console.log("Hello");
-			$("#divContent").load("https://api.github.com/repositories/2126244/commits?per_page=1"); 
+		$("#sBut").click(function(){
+			/* save content to local storage */
+			if(localStorage){
+				localStorage.content = $("#tArea").val()
+			}
+			}); 
+		$("#lBut").click(function(){
+			/* load content from local storage */
+			if(localStorage && localStorage.content){
+				$("#tArea").val(localStorage.content)
+			}
+			});
+		$("#nBut").click(function(){
+			/* clear tArea */
+			console.log($("#tArea").val());
+			$("#tArea").val("");
 			}); 
 		}); 
 });
